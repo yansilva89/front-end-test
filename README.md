@@ -59,7 +59,7 @@ Você não é obrigado a conhecer todas as tecnologias acima mas é um diferenci
 * Utilizar '@font-face' ou 'svg' para os ícones;
 * Utilizar '@font-face' para os textos;
 * Componentizar seu css;
-* VoceSer fiel as especificações do arquivo PSD;
+* Ser fiel as especificações do arquivo PSD;
 * Utilizar animações para o scroll e blocos da página.
 
 ### Breakpoints:
@@ -71,12 +71,9 @@ Você não é obrigado a conhecer todas as tecnologias acima mas é um diferenci
 | desktop            | 1024px         | Breakpoint para desktops comuns   |
 | monitor            | 1280px         | Breakpoints para desktops grandes |
 
-## Material:
-
-* (instruções)
 
 ### Para visualizar o PSD:
-1. Acesse https://github.com/caverna-labs/front-end-test/blob/master/teste_frontend.psd.zip (link).
+1. Acesse https://github.com/caverna-labs/front-end-test/blob/master/teste_frontend.psd.zip.
 
 
 ## Submissão
