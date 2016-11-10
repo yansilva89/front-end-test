@@ -74,8 +74,8 @@ Você não é obrigado a conhecer todas as tecnologias acima mas é um diferenci
 
 * (instruções)
 
-### Para visualizar o [projeto front-end-teste no zeplin](link):
-1. Acesse [link](link).
+### Para visualizar o PSD:
+1. Acesse https://github.com/caverna-labs/front-end-test/blob/master/teste_frontend.psd.zip (link).
 
 
 ## Submissão
