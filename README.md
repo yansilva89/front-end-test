@@ -1,4 +1,4 @@
-> [![Logo Viva Decora](http://cavernalabs.com.br/logo-caverna.jpg)](https://www.vivadecora.com.br)
+> [![Logo Caverna Labs](http://cavernalabs.com.br/logo-caverna.jpg)]
 
 # Caverna Labs
 > Esse teste é público. Todos que os interessados que fizerem pull request receberão um feedback da equipe Caverna Labs.
