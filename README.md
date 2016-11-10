@@ -19,31 +19,32 @@ Nosso time é composto por desenvolvedores com mútiplas especialidades
 * Docker
 * Unix/Linux
 
-Você não é obrigado a conhecer todas as tecnologias acima mas é um diferencial ter o mínimo de experiência em algum dos dois frameworks (Rails ou Django) e saber o básico necessário para desenvolver e manter um ambiente de produção em Cloud. Conhecimentos dobre TDD, Integração contínua também contam como diferenciais mas não são necessários.
+Você não é obrigado a conhecer todas as tecnologias acima mas é um diferencial ter o mínimo de experiência em algum dos frameworks citados.(Ionic, Rails ou Django)
 
 *Vamos ao teste!*
 
 ## Instruções para o teste:
 
 1. Faça um fork deste repositório;
-2. Implemente o HTML/CSS da tela com base no layout disponível;
+2. Implemente o HTML/CSS/JS da tela com base no layout disponível;
 3. Preocupe-se em desenvolver o css utilizando boas práticas;
-4. Para a interação do formulário utilize preferencialmente angularjs e/ou jQuery;
+4. Para a interação utilize preferencialmente angularjs e/ou jQuery;
 5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
 
-* **Importante:** O formulário de cadastro não deve fazer requisições para nenhuma url.
-* **Importante:** A url da página não pode ser recarregada em momento algum.
 
 ### Você pode:
 
 * Utilizar qualquer linguagem de preprocessador css (sass ou stylus) ou css puro;
+* Utilizar frameworks como Foundation ou bootstrap;
 * Utilizar um task runner de sua preferência (gulp, grunt, webpack);
-* Utilizar componentes do bower.
+* Utilizar componentes do bower;
+* Utilizar um gerador de códigos estáticos de sua preferência (Jekyll).
 
 ### Esperamos que você:
 
 * Minifique seu css e deixe-o na pasta "css";
 * Minifique seu javascript e deixe-o na pasta "js";
+* Organize todas as imagens e deixe-o na pasta "img";
 * Respeite os breakpoints definidos pelo design;
 * Faça commit também dos arquivos não minificados;
 * Dê suporte a IE10+, Chrome, Safari e Firefox.
@@ -55,10 +56,10 @@ Você não é obrigado a conhecer todas as tecnologias acima mas é um diferenci
 * Desenvolver HTML semântico;
 * Utilizar boas práticas de SEO;
 * Utilizar '@font-face' ou 'svg' para os ícones;
+* Utilizar '@font-face' para os textos;
 * Componentizar seu css;
-* Ser fiel as especificações do zeplin;
-* Validar os inputs do seu formulário antes de habilitar o botão de envio;
-* Utilizar animações para o scroll da página.
+* VoceSer fiel as especificações do arquivo PSD;
+* Utilizar animações para o scroll e blocos da página.
 
 ### Breakpoints:
 
@@ -75,8 +76,7 @@ Você não é obrigado a conhecer todas as tecnologias acima mas é um diferenci
 
 ### Para visualizar o [projeto front-end-teste no zeplin](link):
 1. Acesse [link](link).
-2. Logue-se com o usuário: **cavernalabs**, senha: **cavernalabsteste**.
-3. Navegue entre os designs pelo menu esquerdo, baixe imagens do design no menu "Assets" do lado direito.
+
 
 ## Submissão
 
