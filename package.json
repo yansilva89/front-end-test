@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/yansilva89/front-end-test#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-watch": "^4.3.11"
   }
 }
