@@ -1,0 +1,21 @@
+{
+  "name": "front-end-test",
+  "homepage": "https://github.com/yansilva89/front-end-test",
+  "authors": [
+    "yansilva89 <yansilva89@gmail.com>"
+  ],
+  "description": "teste",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

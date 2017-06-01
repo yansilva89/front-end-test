@@ -1,0 +1,22 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "description": "> ![Logo Caverna Labs](http://cavernalabs.com.br/logo-caverna.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yansilva89/front-end-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yansilva89/front-end-test/issues"
+  },
+  "homepage": "https://github.com/yansilva89/front-end-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
