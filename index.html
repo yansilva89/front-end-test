@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Teste Front-End</title>
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Css -->
@@ -15,28 +17,86 @@
 
 <body>
     <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <nav class="navbar navbar-fixed-top top">
+            <div class="container">
+                <div class="navbar-header box-nav">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-                <a class="navbar-brand logo" href="#"><img src="images/logo.svg" alt=""></a>
+                    <a class="navbar-brand logo" href="#"><img src="images/logo.svg" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">VIDEO</a></li>
+                        <li><a href="#">PRICES</a></li>
+                        <li><a href="#">TESTIMONIALS</a></li>
+                        <li><a href="#">DOWNLOAD</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">VIDEO</a></li>
-                <li><a href="#">PRICES</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#">DOWNLOAD</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+        <!-- Header -->
+        <header>
+            <div class="container-fluid" style="padding: 0;">
+                <div id="carousel-slide" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-slide" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-slide" data-slide-to="1"></li>
+                        <li data-target="#carousel-slide" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="fade" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-xs="images/slide-xs.jpg" data-sm="images/slide-sm.jpg" data-md="images/slide-md.jpg" data-lg="images/slide-lg.jpg" />
+                            <div class="text-slide">
+                                <h1>Simple, Beautiful<span>&nbsp;and Amazing</span></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar sollicitudin velit id laoreet. Quisque non rhoncus sem.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="fade" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-xs="images/slide-xs.jpg" data-sm="images/slide-sm.jpg" data-md="images/slide-md.jpg" data-lg="images/slide-lg.jpg" />
+                            <div class="text-slide">
+                                <h1>Simple, Beautiful<span>&nbsp;and Amazing</span></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar sollicitudin velit id laoreet. Quisque non rhoncus sem.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-slide" role="button" data-slide="prev">
+                        <img class="icon-left" src="images/icon-left.png" alt="" class="icon-left">
+                        <!-- <span class="icon-control">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </span> -->
+                    </a>
+                    <a class="right carousel-control" href="#carousel-slide" role="button" data-slide="next">
+                        <img class="icon-right" src="images/icon-right.png" alt="" class="icon-left">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- js -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Dara SRC Plugin -->
+        <script src="plugins/bootstrap-data-src/bootstrap-data-src.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('img').dataSrc({
+                    resize: true
+                });
+            });
+
+        </script>
 </body>
 
 </html>

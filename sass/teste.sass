@@ -6,3 +6,78 @@ $blue: #4bcaff
 
 img 
     width: 100%
+    
+// Navbar Top
+.navbar 
+    border: 0
+    margin-bottom: 0
+.top
+    background-color: rgba(0, 0, 0, 0.40)
+    
+.box-nav
+    margin-bottom: 10px
+    
+.logo
+    width: 50%
+    
+//Toggle Buttom    
+.navbar-toggle .icon-bar
+    background-color: $orange
+    
+//Menu List
+.menu li a
+    color: $white
+    font-size: 12px
+    &:focus,
+    &:hover
+        background-color: transparent
+    &:hover,
+    &:active
+        border-top: 1px solid $orange
+//Header
+
+//Slide Arrows
+.carousel-indicators .active
+    background-color: $orange
+    border: 1px solid $orange
+.carousel-control 
+    opacity: .5
+.carousel-control-right, .carousel-control-left
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0))
+.icon-left, .icon-right
+    position: absolute
+    top: 50%    
+    z-index: 5
+    display: inline-block
+    margin-top: -10px
+    font-size: 30px
+    color: $white
+    width: 60%
+
+.icon-left
+    left: 40%
+    margin-left: -10px
+.icon-right
+    right: 40%
+    margin-right: -10px
+    
+.text-slide
+    position: absolute
+    top: 10%
+    left: 5%
+    right: 5%
+    z-index: 10
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.88)
+    text-align: center    
+    h1
+        color: $white
+        font-size: 25px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 400
+    h1 span
+        font-weight: 700
+    p
+        color: $white
+        font-size: 17px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 400
