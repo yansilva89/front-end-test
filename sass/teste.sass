@@ -1,7 +1,8 @@
 $white: #fff
 $green: #91c46b
 $gray: #4f4f50
-$orange: #dc5b2c
+$orange: #f15a24
+$orange-darken: #893f25
 $blue: #4bcaff
 
 img 
@@ -25,15 +26,20 @@ img
     background-color: $orange
     
 //Menu List
+.menu
+    background-color: rgba(0, 0, 0, 0.72)
 .menu li a
     color: $white
-    font-size: 12px
+    font-size: 15px
+    font-family: 'Droid Sans', sans-serif
+    font-weight: 700
+    text-align: center
     &:focus,
     &:hover
         background-color: transparent
     &:hover,
     &:active
-        border-top: 1px solid $orange
+        background-color: $orange
 //Header
 
 //Slide Arrows
@@ -63,9 +69,9 @@ img
     
 .text-slide
     position: absolute
-    top: 10%
-    left: 5%
-    right: 5%
+    top: 15%
+    left: 10%
+    right: 10%
     z-index: 10
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.88)
     text-align: center    
@@ -78,6 +84,81 @@ img
         font-weight: 700
     p
         color: $white
-        font-size: 17px
+        font-size: 16px
         font-family: 'Droid Sans', sans-serif
         font-weight: 400
+    .download
+        border: 2px solid $white
+        border-radius: 6px
+        color: $white
+        //text-shadow: 0 0 0 rgba(0, 0, 0, 0) 
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.88)
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 700
+        padding: 10px 0
+        width: 60%    
+        margin-top: 4%
+    .learn-more   
+        background-color: $orange
+        border-bottom: 2px solid $orange-darken
+        border-radius: 6px
+        color: $white
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0)
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 700
+        padding: 10px 0
+        width: 60%      
+        margin-top: 4%
+    .available
+        margin: 0 auto
+        width: 100%
+        margin-top: 7%
+        text-align: center      
+        span
+            color: $white
+            font-size: 17px
+            font-family: 'Droid Sans', sans-serif
+            font-weight: 400
+        .mobile-icons
+            background-color: #161a1f
+            padding: 10px 10px
+            border-radius: 20px
+            margin: 5px            
+            .fa-apple
+                color: $orange
+                font-size: 20px            
+            .fa-android
+                color: $white
+                font-size: 20px
+                
+@media (min-width: 480px) 
+    .logo
+        width: 45%
+        padding: 10px 15px
+    .menu li a
+        font-size: 18px
+        font-weight: 400
+    .text-slide 
+        top: 20%
+        h1
+            font-size: 32px
+            margin-bottom: 5%
+        p
+            font-size: 17px
+        .learn-more
+            border-bottom: 3px solid $orange-darken
+        .available
+            span
+                font-size: 18px
+
+@media (max-width: 768px)                  
+    .navbar-header.box-nav 
+        float: none
+@media (max-width: 1023px)                
+    .navbar-toggle 
+        display: block
+    .navbar-collapse.collapse 
+        display: none!important
+    .collapse.in 
+        display: block!important
+            

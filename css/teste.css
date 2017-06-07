@@ -15,19 +15,25 @@ img {
   width: 50%; }
 
 .navbar-toggle .icon-bar {
-  background-color: #dc5b2c; }
+  background-color: #f15a24; }
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.72); }
 
 .menu li a {
   color: #fff;
-  font-size: 12px; }
+  font-size: 15px;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 700;
+  text-align: center; }
   .menu li a:focus, .menu li a:hover {
     background-color: transparent; }
   .menu li a:hover, .menu li a:active {
-    border-top: 1px solid #dc5b2c; }
+    background-color: #f15a24; }
 
 .carousel-indicators .active {
-  background-color: #dc5b2c;
-  border: 1px solid #dc5b2c; }
+  background-color: #f15a24;
+  border: 1px solid #f15a24; }
 
 .carousel-control {
   opacity: 0.5; }
@@ -55,9 +61,9 @@ img {
 
 .text-slide {
   position: absolute;
-  top: 10%;
-  left: 5%;
-  right: 5%;
+  top: 15%;
+  left: 10%;
+  right: 10%;
   z-index: 10;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.88);
   text-align: center; }
@@ -70,6 +76,81 @@ img {
     font-weight: 700; }
   .text-slide p {
     color: #fff;
-    font-size: 17px;
+    font-size: 16px;
     font-family: "Droid Sans", sans-serif;
     font-weight: 400; }
+  .text-slide .download {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.88);
+    font-family: "Droid Sans", sans-serif;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 60%;
+    margin-top: 4%; }
+  .text-slide .learn-more {
+    background-color: #f15a24;
+    border-bottom: 2px solid #893f25;
+    border-radius: 6px;
+    color: #fff;
+    text-shadow: 0 0 0 transparent;
+    font-family: "Droid Sans", sans-serif;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 60%;
+    margin-top: 4%; }
+  .text-slide .available {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 7%;
+    text-align: center; }
+    .text-slide .available span {
+      color: #fff;
+      font-size: 17px;
+      font-family: "Droid Sans", sans-serif;
+      font-weight: 400; }
+    .text-slide .available .mobile-icons {
+      background-color: #161a1f;
+      padding: 10px 10px;
+      border-radius: 20px;
+      margin: 5px; }
+      .text-slide .available .mobile-icons .fa-apple {
+        color: #f15a24;
+        font-size: 20px; }
+      .text-slide .available .mobile-icons .fa-android {
+        color: #fff;
+        font-size: 20px; }
+
+@media (min-width: 480px) {
+  .logo {
+    width: 45%;
+    padding: 10px 15px; }
+
+  .menu li a {
+    font-size: 18px;
+    font-weight: 400; }
+
+  .text-slide {
+    top: 20%; }
+    .text-slide h1 {
+      font-size: 32px;
+      margin-bottom: 5%; }
+    .text-slide p {
+      font-size: 17px; }
+    .text-slide .learn-more {
+      border-bottom: 3px solid #893f25; }
+    .text-slide .available span {
+      font-size: 18px; } }
+@media (max-width: 768px) {
+  .navbar-header.box-nav {
+    float: none; } }
+@media (max-width: 1023px) {
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .collapse.in {
+    display: block !important; } }
