@@ -111,16 +111,16 @@ img {
       font-family: "Droid Sans", sans-serif;
       font-weight: 400; }
     .text-slide .available .mobile-icons {
-      background-color: #161a1f;
-      padding: 10px 10px;
-      border-radius: 20px;
       margin: 5px; }
+      .text-slide .available .mobile-icons .fa-apple, .text-slide .available .mobile-icons .fa-android {
+        background-color: rgba(0, 0, 0, 0.66);
+        padding: 10px 12px;
+        border-radius: 20px;
+        font-size: 20px; }
       .text-slide .available .mobile-icons .fa-apple {
-        color: #f15a24;
-        font-size: 20px; }
+        color: #f15a24; }
       .text-slide .available .mobile-icons .fa-android {
-        color: #fff;
-        font-size: 20px; }
+        color: #fff; }
 
 @media (min-width: 480px) {
   .logo {
@@ -141,10 +141,57 @@ img {
     .text-slide .learn-more {
       border-bottom: 3px solid #893f25; }
     .text-slide .available span {
-      font-size: 18px; } }
-@media (max-width: 768px) {
+      font-size: 18px; }
+    .text-slide .available .fa-apple, .text-slide .available .fa-android {
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-size: 25px; } }
+@media (min-width: 768px) {
   .navbar-header.box-nav {
-    float: none; } }
+    float: none;
+    margin-bottom: 0; }
+
+  .top {
+    height: 75px; }
+
+  .logo {
+    width: 40%; }
+
+  .navbar-toggle {
+    padding: 20px 10px; }
+
+  .menu {
+    width: 100%;
+    float: none;
+    margin-right: 0; }
+    .menu li {
+      width: 100%; }
+      .menu li a {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+
+  .slide-box {
+    height: 100vh; }
+
+  .text-slide h1 {
+    font-size: 45px; }
+  .text-slide p {
+    font-size: 25px; }
+  .text-slide .learn-more, .text-slide .download {
+    font-size: 20px;
+    width: 40%;
+    margin-left: 2px;
+    margin-right: 2px; }
+  .text-slide .available span {
+    font-size: 25px; }
+  .text-slide .available .mobile-icons .fa-apple, .text-slide .available .mobile-icons .fa-android {
+    padding: 10px 15px;
+    border-radius: 35px;
+    font-size: 35px; }
+
+  .icon-left,
+  .icon-right {
+    width: 45%; } }
 @media (max-width: 1023px) {
   .navbar-toggle {
     display: block; }
@@ -154,3 +201,31 @@ img {
 
   .collapse.in {
     display: block !important; } }
+@media (min-width: 1024px) {
+  .top {
+    height: 60px; }
+
+  .navbar-header.box-nav {
+    width: 25%;
+    float: left; }
+    .navbar-header.box-nav .logo {
+      width: 100%; }
+
+  .box-menu {
+    width: 75%;
+    float: right; }
+    .box-menu .menu {
+      width: auto;
+      background-color: transparent; }
+      .box-menu .menu li {
+        width: auto; }
+        .box-menu .menu li a {
+          font-size: 12px;
+          border-top: 2px solid rgba(0, 0, 0, 0.4); }
+          .box-menu .menu li a:hover, .box-menu .menu li a:active {
+            background-color: transparent;
+            border-top: 2px solid #f15a24; }
+
+  .icon-left,
+  .icon-right {
+    width: 35%; } }

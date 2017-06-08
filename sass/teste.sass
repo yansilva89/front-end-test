@@ -119,17 +119,17 @@ img
             font-size: 17px
             font-family: 'Droid Sans', sans-serif
             font-weight: 400
-        .mobile-icons
-            background-color: #161a1f
-            padding: 10px 10px
-            border-radius: 20px
-            margin: 5px            
+        .mobile-icons            
+            margin: 5px   
+            .fa-apple, .fa-android
+                background-color: rgba(0, 0, 0, 0.66)
+                padding: 10px 12px
+                border-radius: 20px
+                font-size: 20px    
             .fa-apple
-                color: $orange
-                font-size: 20px            
+                color: $orange                        
             .fa-android
-                color: $white
-                font-size: 20px
+                color: $white                
                 
 @media (min-width: 480px) 
     .logo
@@ -150,10 +150,55 @@ img
         .available
             span
                 font-size: 18px
+            .fa-apple, .fa-android                
+                padding: 10px 15px
+                border-radius: 25px
+                font-size: 25px
 
-@media (max-width: 768px)                  
+@media (min-width: 768px)                  
     .navbar-header.box-nav 
         float: none
+        margin-bottom: 0
+    .top    
+        height: 75px
+    .logo
+        width: 40%
+    .navbar-toggle
+        padding: 20px 10px
+    .menu
+        width: 100%
+        float: none
+        margin-right: 0
+        li
+            width: 100%
+            a
+                padding-top: 20px
+                padding-bottom: 20px
+    .slide-box 
+        height: 100vh
+    .text-slide         
+        h1
+            font-size: 45px            
+        p
+            font-size: 25px
+        .learn-more, .download
+            font-size: 20px
+            width: 40%
+            margin-left: 2px
+            margin-right: 2px
+        .available
+            span
+                font-size: 25px
+            .mobile-icons 
+                .fa-apple, .fa-android
+                    padding: 10px 15px
+                    border-radius: 35px
+                    font-size: 35px    
+    .icon-left,
+    .icon-right
+        width: 45%
+                    
+//Comportamento Menu para Tablets         
 @media (max-width: 1023px)                
     .navbar-toggle 
         display: block
@@ -161,4 +206,34 @@ img
         display: none!important
     .collapse.in 
         display: block!important
+        
+@media (min-width: 1024px) 
+    .top 
+        height: 60px
+    .navbar-header.box-nav    
+        width: 25%
+        float: left
+        .logo 
+            width: 100%
+    .box-menu  
+        width: 75%
+        float: right
+        .menu
+            width: auto
+            background-color: transparent
+            li
+                width: auto
+                a
+                    font-size: 12px
+                    border-top: 2px solid rgba(0, 0, 0, 0.40)
+                    &:hover, 
+                    &:active
+                        background-color: transparent
+                        border-top: 2px solid $orange
+    .icon-left,
+    .icon-right
+        width: 35%
+        
+@media (min-width: 1200px)     
+@media (min-width: 1360px)         
             
