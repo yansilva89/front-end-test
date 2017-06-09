@@ -83,6 +83,7 @@ img {
     border: 2px solid #fff;
     border-radius: 6px;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.66);
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.88);
     font-family: "Droid Sans", sans-serif;
     font-weight: 700;
@@ -91,7 +92,7 @@ img {
     margin-top: 4%; }
   .text-slide .learn-more {
     background-color: #f15a24;
-    border-bottom: 2px solid #893f25;
+    border-bottom: 2px solid #ce4e22;
     border-radius: 6px;
     color: #fff;
     text-shadow: 0 0 0 transparent;
@@ -139,7 +140,7 @@ img {
     .text-slide p {
       font-size: 17px; }
     .text-slide .learn-more {
-      border-bottom: 3px solid #893f25; }
+      border-bottom: 3px solid #ce4e22; }
     .text-slide .available span {
       font-size: 18px; }
     .text-slide .available .fa-apple, .text-slide .available .fa-android {
@@ -221,11 +222,73 @@ img {
         width: auto; }
         .box-menu .menu li a {
           font-size: 12px;
+          transition: border-top 0.5s ease;
           border-top: 2px solid rgba(0, 0, 0, 0.4); }
           .box-menu .menu li a:hover, .box-menu .menu li a:active {
             background-color: transparent;
             border-top: 2px solid #f15a24; }
 
+  .text-slide {
+    left: 15%;
+    right: 15%; }
+    .text-slide h1 {
+      font-size: 40px; }
+    .text-slide p {
+      font-size: 20px; }
+    .text-slide .learn-more,
+    .text-slide .download {
+      font-size: 16px;
+      width: 25%; }
+    .text-slide .download:hover, .text-slide .download:active {
+      transition: background-color 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.66); }
+    .text-slide .learn-more:hover, .text-slide .learn-more:active {
+      transition: background-color 0.5s ease;
+      background-color: #ce4e22; }
+    .text-slide .available span {
+      font-size: 20px; }
+    .text-slide .available .mobile-icons .fa-apple, .text-slide .available .mobile-icons .fa-android {
+      padding: 10px 13px;
+      border-radius: 25px;
+      font-size: 25px; }
+
   .icon-left,
   .icon-right {
-    width: 35%; } }
+    width: 30%; } }
+@media (min-width: 1200px) {
+  .navbar-header.box-nav {
+    width: 20%; }
+
+  .slide-box {
+    height: auto; }
+
+  .text-slide {
+    text-align: left;
+    top: 22%;
+    left: 36%;
+    right: 10%; }
+    .text-slide p {
+      font-size: 18px; }
+    .text-slide .available {
+      text-align: left; }
+
+  .icon-left, .icon-right {
+    width: 25%; } }
+@media (min-width: 1360px) {
+  .box-menu .menu li a {
+    font-size: 15px; }
+
+  .text-slide {
+    top: 25%;
+    left: 45%;
+    right: 10%; }
+    .text-slide p {
+      font-size: 18px; }
+    .text-slide .learn-more,
+    .text-slide .download {
+      font-size: 15px;
+      width: 22%; }
+
+  .icon-left,
+  .icon-right {
+    width: 20%; } }
