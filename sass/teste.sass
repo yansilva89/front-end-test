@@ -1,6 +1,9 @@
+//All Colors
 $white: #fff
+$white-gray: #f9f9f9
 $green: #91c46b
 $gray: #4f4f50
+$gray-darken: #414042
 $orange: #f15a24
 $orange-darken: #ce4e22
 $blue: #4bcaff
@@ -13,7 +16,7 @@ img
     border: 0
     margin-bottom: 0
 .top
-    background-color: rgba(0, 0, 0, 0.40)
+    background-color: rgba(0, 0, 0, 0.8)
     
 .box-nav
     margin-bottom: 10px
@@ -48,7 +51,7 @@ img
     border: 1px solid $orange
 .carousel-control 
     opacity: .5
-.carousel-control-right, .carousel-control-left
+.carousel-control.right, .carousel-control.left
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0))
 .icon-left, .icon-right
     position: absolute
@@ -131,6 +134,241 @@ img
             .fa-android
                 color: $white                
                 
+// Features Section
+.features
+    background-color: $white-gray
+    border-top: 5px solid $orange
+    padding-top: 10px      
+.features-content
+    text-align: center
+    h1
+        color: $gray-darken
+        font-size: 18px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 700
+    p
+        color: $gray-darken
+        font-size: 15px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 400
+    .features-elements 
+        width: 100%
+        padding: 25px 10px 0 10px
+        .elements
+            width: 100%
+            margin: 0 auto  
+            padding-bottom: 10px //To Mobile
+            img
+                width: 30%            
+            h3
+                color: $gray-darken
+                font-size: 18px
+                font-family: 'Droid Sans', sans-serif
+                font-weight: 700
+            p   
+                color: $gray-darken
+                font-size: 15px
+                font-family: 'Droid Sans', sans-serif
+                font-weight: 400
+
+//Gallery Section   
+
+//Lightbox Alts
+.lightbox .lb-image
+    border: 0
+//Lightbox Alts    
+    
+.gallery
+    background-color: $white    
+    padding-top: 10px  
+.gallery-content
+    @extend .features-content
+    .gallery-elements
+        @extend .features-elements  
+        .pictures-box
+            width: 75%
+            margin: 0 auto
+        //Pictures Overlay de Gallery Section
+        .pictures-in
+            position: relative 
+            overflow: hidden
+            border-radius: 15px
+            &:hover 
+                .gallery-overlay
+                    opacity: 1                                      
+                    .gallery-text-overlay
+                        position: absolute
+                        bottom: 0
+                        width: 100%                
+                        background-color: $orange-darken
+                        text-align: center
+                        opacity: 1
+                        transition: .5s ease                          
+                        p
+                            color: $white
+                            font-size: 12px
+                            font-family: 'Droid Sans', sans-serif
+                            font-weight: 700
+                            padding: 5px 0
+                            margin: 0                            
+            .gallery-img
+                display: block
+                width: 100%
+                height: auto                
+            .gallery-overlay 
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                height: 100%
+                width: 100%
+                opacity: 0
+                transition: .5s ease
+                background-color: $orange
+            .gallery-icon
+                color: $white
+                font-size: 35px
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                -ms-transform: translate(-50%, -50%)
+            .gallery-text-overlay
+                opacity: 0                
+            .gallery-text
+                width: 100%                
+                background-color: $gray
+                text-align: center                
+                p
+                    color: $white
+                    font-size: 12px
+                    font-family: 'Droid Sans', sans-serif
+                    font-weight: 700
+                    padding: 5px 0
+                    margin: 0
+        .gallery-description
+            text-align: center
+            margin-top: 15px
+            margin-bottom: 20px
+            p
+                color: $gray-darken
+                font-size: 12px
+                font-family: 'Droid Sans', sans-serif
+                font-weight: 400  
+
+//Watch Section
+.watch    
+    background: $orange url(../images/bgwatch.jpg) no-repeat center fixed
+.watch-content
+    padding: 20% 0 
+    text-align: center
+.play-img    
+    width: 25%
+    margin: 0 auto
+.play-text
+    color: $white
+    font-family: 'Droid Sans', sans-serif
+    font-weight: 400
+    h1
+        font-size: 30px
+        margin-bottom: 20px
+        span
+            font-weight: 700
+    p
+        font-size: 13px
+
+//Prices Section
+.prices
+    padding-top: 5px
+.prices-content
+    @extend .features-content
+    .prices-title
+        @extend .features-elements  
+.prices-plan
+    padding: 0 10px
+.plan
+    background-color: $white-gray
+    border: 1px solid #dedede
+    border-radius: 5px
+    margin-bottom: 15px
+    padding: 0 0 15px 0
+    h3
+        color: #a5a5a5
+        font-size: 15px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 700  
+    h1
+        color: $white
+        font-size: 50px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 700
+        padding: 8px 0
+    .purchase
+        color: $white
+        font-size: 15px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 400
+        padding: 10px 0
+        width: 60%
+.highlight h3
+    color: $orange
+    
+//Testimonials
+.testimony
+    background-color: $white-gray
+    padding: 25px 0 25px 0
+.testimony-box    
+    h1
+        color: $gray-darken
+        font-size: 25px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 700 
+        text-align: center
+        margin-top: 0
+        margin-bottom: 10px
+.testimony-content
+    text-align: center
+    img
+        width: 40%
+    p
+        color: $orange
+        font-size: 12px
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 400 
+        text-align: center 
+.testimony-controls
+    text-align: center
+    a
+        opacity: 0.6 
+    a.active
+        opacity: 1     
+    img
+        width: 10%                  
+
+//Like Section
+.like
+    background-color: $gray
+    padding: 10px 0 20px 0
+.like-content
+    text-align: center
+    h1
+        color: $white
+        font-family: 'Droid Sans', sans-serif
+        font-weight: 400
+        font-size: 30px
+    .download-now
+        background-color: $orange
+        border-bottom: 2px solid $orange-darken
+        border-radius: 6px
+        color: #fff
+        text-shadow: 0 0 0 transparent
+        font-family: "Droid Sans", sans-serif
+        font-weight: 700
+        padding: 10px 0
+        width: 50%
+        margin-top: 4%
+        
 @media (min-width: 480px) 
     .logo
         width: 45%
