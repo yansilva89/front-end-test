@@ -10,7 +10,11 @@ $blue: #4bcaff
 
 img 
     width: 100%
-    
+  
+a
+    &:hover, 
+    &:active
+        text-decoration: none
 // Navbar Top
 .navbar 
     border: 0
@@ -138,7 +142,8 @@ img
 .features
     background-color: $white-gray
     border-top: 5px solid $orange
-    padding-top: 10px      
+    padding-top: 10px 
+    padding-bottom: 20px
 .features-content
     text-align: center
     h1
@@ -154,10 +159,7 @@ img
     .features-elements 
         width: 100%
         padding: 25px 10px 0 10px
-        .elements
-            width: 100%
-            margin: 0 auto  
-            padding-bottom: 10px //To Mobile
+        .elements                        
             img
                 width: 30%            
             h3
@@ -180,14 +182,14 @@ img
     
 .gallery
     background-color: $white    
-    padding-top: 10px  
+    padding-top: 10px 
+    padding-bottom: 20px
 .gallery-content
     @extend .features-content
     .gallery-elements
+        overflow: hidden
         @extend .features-elements  
-        .pictures-box
-            width: 75%
-            margin: 0 auto
+        .pictures-box           
         //Pictures Overlay de Gallery Section
         .pictures-in
             position: relative 
@@ -349,7 +351,7 @@ img
 //Like Section
 .like
     background-color: $gray
-    padding: 10px 0 20px 0
+    padding: 10px 0 30px 0
 .like-content
     text-align: center
     h1
@@ -369,6 +371,53 @@ img
         width: 50%
         margin-top: 4%
         
+//Contact Section
+.contact
+    background-color: $orange  
+.contact-content
+    text-align: center
+    padding: 20px 12px
+    background-color: $orange
+    .contact-form        
+        h1
+            color: $white
+            font-family: 'Droid Sans', sans-serif
+            font-weight: 700
+            font-size: 30px 
+.contact-area
+    height: 50px
+    margin-bottom: 2%
+    text-align: center
+.message
+    text-align: center
+.send
+    background-color: $white
+    color: $orange
+    font-family: 'Droid Sans', sans-serif
+    font-weight: 700
+    font-size: 15px
+    margin-top: 2%
+    width: 40%
+    padding: 10px 12px
+.maps
+    pointer-events: none
+
+//Footer
+footer
+    background-color: $gray
+.footer-content
+    padding: 5% 0
+    .copy,
+    .terms
+        width: 100%
+        text-align: center
+        p
+            color: #bbbbbb
+            font-family: 'Droid Sans', sans-serif
+            font-weight: 400
+            font-size: 12px 
+        
+    
 @media (min-width: 480px) 
     .logo
         width: 45%
@@ -392,7 +441,11 @@ img
                 padding: 10px 15px
                 border-radius: 25px
                 font-size: 25px
-
+    .gallery-content 
+        .gallery-elements 
+            .gallery-description p                
+                font-size: 13px   
+                
 @media (min-width: 768px)                  
     .navbar-header.box-nav 
         float: none
@@ -435,8 +488,72 @@ img
     .icon-left,
     .icon-right
         width: 45%
-                    
-//Comportamento Menu para Tablets         
+    .features-content
+        h1
+            font-size: 25px
+       
+        p         
+            font-size: 18px
+    .features-content 
+        .features-elements 
+            .elements
+                h3
+                    font-size: 20px
+                p
+                    font-size: 18px
+    .gallery-content 
+        .gallery-elements 
+            overflow: hidden
+            .pictures-box                
+                .gallery-description p                
+                    font-size: 15px   
+    .play-img
+        width: 15%
+    .play-text
+        h1 
+            font-size: 35px
+        p      
+            font-size: 15px 
+    .prices
+        padding-bottom: 25px
+    .prices-plan  
+        margin-top: 25px
+        .plan 
+            margin-top: 35px
+            h3
+                font-size: 18px
+            .value
+                h1
+                    font-size: 45px
+            .purchase
+                font-size: 18px
+                margin-top: 15px
+        .highlight
+            margin-top: 10px
+    .testimony-content
+        img
+            width: 20%
+        p
+            font-size: 15px
+            padding: 0 15%
+    .like-content
+        .download-now
+            width: 40%
+            font-size: 18px
+    .contact
+        position: relative
+    .contact-content
+        position: absolute
+        width: 50%
+        left: 25%
+        right: 25%
+        top: 10%
+        border-radius: 15px
+        background-color: rgba(241, 90, 36, 0.8)
+    .send
+        font-size: 18px
+        
+//Comportamento Menu para Tablets Landscape       
 @media (max-width: 1023px)                
     .navbar-toggle 
         display: block
@@ -500,6 +617,33 @@ img
     .icon-left,
     .icon-right
         width: 30%
+    .features-content 
+        .features-elements 
+            .elements 
+                img
+                    width: 50%
+                h3
+                    font-size: 18px
+                p
+                    font-size: 15px
+    .play-img
+        width: 10%
+    .play-text
+        padding: 0 10%
+        h1 
+            font-size: 30px
+    .testimony-content 
+        img
+            width: 15%
+        p
+            margin-top: 20px
+    .like-content .download-now
+        margin-top: 2%
+    .contact-content
+        width: 40%
+        left: 30%
+    .footer-content 
+        padding: 2% 0    
         
 @media (min-width: 1200px)     
     .navbar-header.box-nav 
@@ -517,6 +661,17 @@ img
             text-align: left
     .icon-left, .icon-right 
         width: 25%
+    .features,
+    .gallery,
+    .prices
+        padding: 20px 0 30px 0    
+    .watch-content
+        padding: 10% 0
+    .testimony-content p
+        padding: 0 25%
+    .contact-content
+        width: 30%
+        left: 35%
 
 @media (min-width: 1360px)  
     .box-menu .menu li a 
@@ -533,4 +688,7 @@ img
             width: 22%
     .icon-left, 
     .icon-right 
-        width: 20%          
+        width: 20% 
+    .contact-content 
+        width: 28%
+        left: 36%
