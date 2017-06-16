@@ -17,7 +17,7 @@
     <link href="css/teste.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="home">
     <nav class="navbar navbar-fixed-top top">
         <div class="container">
             <div class="navbar-header box-nav">
@@ -31,14 +31,14 @@
             </div>
             <div class="collapse navbar-collapse box-menu" id="navbar">
                 <ul class="nav navbar-nav navbar-right menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">VIDEO</a></li>
-                    <li><a href="#">PRICES</a></li>
-                    <li><a href="#">TESTIMONIALS</a></li>
-                    <li><a href="#">DOWNLOAD</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#watch">VIDEO</a></li>
+                    <li><a href="#prices">PRICES</a></li>
+                    <li><a href="#testimony">TESTIMONIALS</a></li>
+                    <li><a href="#like">DOWNLOAD</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -129,7 +129,7 @@
         </div>
     </header>
     <!-- Features -->
-    <section class="features">
+    <section id="features" class="features">
         <div class="container">
             <div class="features-content">
                 <h1>SUMMARISE THE FEATURES</h1>
@@ -160,7 +160,7 @@
         </div>
     </section>
     <!-- Gallery -->
-    <section class="gallery">
+    <section id="gallery" class="gallery">
         <div class="content">
             <div class="gallery-content">
                 <h1>SHOW THE GALLERY</h1>
@@ -259,7 +259,7 @@
         </div>
     </section>
     <!-- Watch -->
-    <section class="watch">
+    <section id="watch" class="watch">
         <div class="container">
             <div class="watch-content">
                 <a href="">
@@ -275,7 +275,7 @@
         </div>
     </section>
     <!-- Prices -->
-    <section class="prices">
+    <section id="prices" class="prices">
         <div class="container">
             <div class="prices-content">
                 <div class="prices-title">
@@ -321,7 +321,7 @@
         </div>
     </section>
     <!-- Testimonials -->
-    <section class="testimony">
+    <section id="testimony" class="testimony">
         <div class="container">
             <div id="carousel-slide" class="carousel slide testimony-box" data-ride="carousel">
                 <h1>Testimonials</h1>
@@ -360,7 +360,7 @@
         </div>
     </section>
     <!-- Like -->
-    <section class="like">
+    <section id="like" class="like">
         <div class="container">
             <div class="like-content">
                 <h1>Do you like this app?</h1>
@@ -369,7 +369,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-form">
@@ -391,7 +391,7 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="copy">
@@ -410,13 +410,34 @@
     <script src="plugins/bootstrap-data-src/bootstrap-data-src.min.js"></script>
     <!-- Lightbox Plugin -->
     <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="plugins/smooth-scroll/jquery.smooth-scroll.js"></script>  
+    <!-- BS SRC -->      
     <script>
         $(document).ready(function() {
             $('img').dataSrc({
                 resize: true
             });
         });
+    </script>
+    <!-- Smooth Scroll -->
+    <script>
+        function url(link) {
+            window.location = link
+        }
+        $(document).ready(function() {
+        $('ul.navbar-nav a').click(function(event) {
+            event.preventDefault();
 
+            var link = this;
+            $.smoothScroll({
+                speed: 1000,
+                offset: -60,
+                scrollTarget: link.hash
+            });
+
+        });
+    });
     </script>
 </body>
 
